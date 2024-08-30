@@ -140,7 +140,7 @@ def goosh(kogaeem) :
     #         r = sr.Recognizer()
     #         mic = sr.Microphone()
     #         with mic as sours:
-    #             play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ2.mp3")
+    #             play_audio("E . or. D:\\you model dataset sonds directory\\بیپ2.mp3")
     #             time.sleep(0.5)
     #             audio = r.listen(sours)
     #             command = r.recognize_google(audio, language='fa-IR')
@@ -152,7 +152,7 @@ def goosh(kogaeem) :
     #         if kogaeem == "0":
     #             pass
     #         else:
-    #             play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\error.mp3")
+    #             play_audio("E . or. D:\\you model dataset sonds directory\\error.mp3")
     #             time.sleep(1)
     # else:
     try:
@@ -162,7 +162,7 @@ def goosh(kogaeem) :
         stream = cap.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)
         stream.start_stream()
         if str(kogaeem) == "1" :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ2.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\بیپ2.mp3")
         elif str(kogaeem) == "0" :
             pass
         time.sleep(0.5)
@@ -181,7 +181,7 @@ def goosh(kogaeem) :
         if kogaeem == "0":
             pass
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\error.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\error.mp3")
             time.sleep(1)
 
 # def goosh_online(kogaeem) :
@@ -194,7 +194,7 @@ def goosh(kogaeem) :
 #             r = sr.Recognizer()
 #             mic = sr.Microphone()
 #             with mic as sours:
-#                 play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ2.mp3")
+#                 play_audio("E . or. D:\\you model dataset sonds directory\\بیپ2.mp3")
 #                 time.sleep(0.5)
 #                 audio = r.listen(sours)
 #                 command = r.recognize_google(audio, language='fa-IR')
@@ -206,7 +206,7 @@ def goosh(kogaeem) :
 #             if kogaeem == "0":
 #                 pass
 #             else:
-#                 play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\error.mp3")
+#                 play_audio("E . or. D:\\you model dataset sonds directory\\error.mp3")
 #                 time.sleep(1)
 
 def play_audio(file_path):
@@ -221,14 +221,14 @@ def play_audio(file_path):
 ################################################
 ############# سلام برای بیدار شدن سینا ##########
 def get_up_sina():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\salam.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\salam.mp3")
     time.sleep(2.5)
 
 ################################################
 ########## توابع کار های سینا با اینترنت #######
 
 def internet() :
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\درحال_اتصال.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\درحال_اتصال.mp3")
     time.sleep(1)
     wifi = pywifi.PyWiFi()
     iface = wifi.interfaces()[0]
@@ -243,11 +243,11 @@ def internet() :
     iface.connect(tmp_profile)
     time.sleep(3)
     if iface.status() == const.IFACE_CONNECTED:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\متصل.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\متصل.mp3")
         time.sleep(2)
         return True
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\عدم_اتصال.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\عدم_اتصال.mp3")
         time.sleep(5)
         return False
 
@@ -267,27 +267,27 @@ def check_internet_connection():
 def check_internet_connect() :
     test_check = check_internet_connection()
     if test_check == True :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\اینترنت شما متصل است.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\اینترنت شما متصل است.mp3")
         time.sleep(0.8)
     else:
         while True:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\اینترنت شما متصل نیست آیا وصل کنم.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\اینترنت شما متصل نیست آیا وصل کنم.mp3")
             time.sleep(3)
             Q = goosh("0")
             if "بله" in Q:
                 internet()
                 break
             elif "خیر" in Q:
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
                 time.sleep(0.9)
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
                 time.sleep(0.2)
                 pas("")
             else:
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بله یا خیر.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\بله یا خیر.mp3")
                 time.sleep(2)
 
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
         time.sleep(0.2)
         pas("")
 
@@ -297,7 +297,7 @@ def send_email():
         matn = ""
         adres = ""
         title = ""
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\matn_email.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\matn_email.mp3")
         # time.sleep(3)
         while True :
             command = goosh("1")
@@ -305,11 +305,11 @@ def send_email():
                 matn = command
                 break
             else:
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\matn_khali.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\matn_khali.mp3")
                 # time.sleep(3)
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\adres_email2.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\adres_email2.mp3")
         # time.sleep(3)
-        adreses = {"هاتف": "baraye.meta@gmail.com", "بابا": "applytc@gmail.com"}
+        adreses = {"me": "baraye.meta@gmail.com", "fother": "applytc@gmail.com"}
         while True :
             command2 = goosh("1")
             for i in adreses.keys():
@@ -317,7 +317,7 @@ def send_email():
                     adres = f"{adreses[i]}"
                     break
                 else:
-                    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\not_email.mp3")
+                    play_audio("E . or. D:\\you model dataset sonds directory\\not_email.mp3")
                     time.sleep(2)
                     break
                     adres = ""
@@ -332,44 +332,44 @@ def send_email():
             with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
                 smtp.ehlo()
                 smtp.starttls()
-                smtp.login("applytc@gmail.com", "qgcm oguv dhdi dhog ")
+                smtp.login("your gmail", "your gmail api key")
                 smtp.send_message(message)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\send_mail.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\send_mail.mp3")
             time.sleep(3)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
         pas("")
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تذکر_اینترنت.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\تذکر_اینترنت.mp3")
         time.sleep(5)
         comm = goosh("1")
         if "بله" in comm or "آره" in comm or "اره" in comm:
             internet()
             send_email()
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
 
 def map():
     test_net = check_internet_connection()
     if test_net:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\map.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\map.mp3")
         time.sleep(4)
         command = goosh("1")
         base_url = "https://www.google.com/maps/search/"
         address_query = "+".join(command.split())
         full_url = base_url + address_query
         webbrowser.open(full_url)
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\نقشه شما.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\نقشه شما.mp3")
         time.sleep(3)
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
         time.sleep(2)
         pas("")
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تذکر_اینترنت.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\تذکر_اینترنت.mp3")
         time.sleep(5)
         comm = goosh("1")
         if "بله" in comm or "آره" in comm or "اره" in comm:
@@ -377,9 +377,9 @@ def map():
             map()
 
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
 
@@ -390,7 +390,7 @@ def wiki_pedia():
     test_net = check_internet_connection()
     if test_net:
         try:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\سرچ ویکی.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\سرچ ویکی.mp3")
             time.sleep(2)
             # تغییر زبان به فارسی
             wikipedia.set_lang("fa")
@@ -398,7 +398,7 @@ def wiki_pedia():
             search_term = goosh("0")
             # جستجو در ویکی پدیا
             play_audio(
-                "E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\درحال ویکی.mp3")
+                "E . or. D:\\you model dataset sonds directory\\درحال ویکی.mp3")
             time.sleep(2)
             page = wikipedia.page(search_term)
             # چاپ عنوان مقاله
@@ -410,22 +410,22 @@ def wiki_pedia():
             os.chdir("C:\\Users\\computer\\Desktop")
             with open(f"{title}.txt", "w", encoding="utf-8") as file:
                 file.write(f"عنوان : {title}\n\n    {matn}")
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ذخیره مقاله.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\ذخیره مقاله.mp3")
             time.sleep(3)
 
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\متن مقاله.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\متن مقاله.mp3")
             time.sleep(2)
             comm = goosh("1")
 
             if "بله" in comm or "آره" in comm :
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بسیار خب منتظر باشید.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\بسیار خب منتظر باشید.mp3")
                 time.sleep(3)
                 maghalle_khan(f"{title} ,,؛؛ {matn}")
 
             else:
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
                 time.sleep(1)
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
                 time.sleep(2)
 
 
@@ -433,11 +433,11 @@ def wiki_pedia():
 
             pas("")
         except:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\عدم ویکی.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\عدم ویکی.mp3")
             time.sleep(2)
             pas("")
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تذکر_اینترنت.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\تذکر_اینترنت.mp3")
         time.sleep(5)
         comm = goosh("1")
         if "بله" in comm or "آره" in comm or "اره" in comm:
@@ -445,9 +445,9 @@ def wiki_pedia():
             wiki_pedia()
 
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
 
@@ -455,7 +455,7 @@ def google():
     test_net = check_internet_connection()
     if test_net:
         try:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\سرچ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\سرچ.mp3")
             time.sleep(2.5)
             comm = goosh("0")
             goda = comm.split(" ")
@@ -465,18 +465,18 @@ def google():
             serch_command = serch_command[:-1]
             print(serch_command)
             os.system(f"start https://www.google.com/search?q={serch_command}")
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\نتیجه سرچ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\نتیجه سرچ.mp3")
             time.sleep(2.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2.5)
             pas("")
 
         except:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\عدم سرچ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\عدم سرچ.mp3")
             time.sleep(2)
             pas("")
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تذکر_اینترنت.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\تذکر_اینترنت.mp3")
         time.sleep(5)
         comm = goosh("1")
         if "بله" in comm or "آره" in comm or "اره" in comm:
@@ -484,9 +484,9 @@ def google():
             google()
 
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
 
@@ -508,7 +508,7 @@ def STT2(Lang) :
 
     LN = ""
     if Lang in fa :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\صحبت کنید.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\صحبت کنید.mp3")
         LN = 'fa-IR'
     elif Lang in en :
         pyttsx3.speak("so pleas speak")
@@ -520,7 +520,7 @@ def STT2(Lang) :
     r = sr.Recognizer()
     mic = sr.Microphone()
     with mic as sours:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ2.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\بیپ2.mp3")
         time.sleep(0.5)
         audio = r.listen(sours)
         command = r.recognize_google(audio, language=f"{LN}")
@@ -619,7 +619,7 @@ def Translator():
     test_net = check_internet_connection()
     if test_net:
         while True :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\از چه زبانی.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\از چه زبانی.mp3")
             time.sleep(1)
             zab = goosh("1")
             langs__ = ["فارسی",
@@ -640,7 +640,7 @@ def Translator():
                 else:
                     pass
     else:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تذکر_اینترنت.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\تذکر_اینترنت.mp3")
         time.sleep(5)
         comm = goosh("1")
         if "بله" in comm or "آره" in comm or "اره" in comm:
@@ -648,9 +648,9 @@ def Translator():
             google()
 
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
 ################################################
@@ -669,7 +669,7 @@ def reset_fosh() :
 def nevis():
     text = ""
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\nevisande.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\nevisande.mp3")
     time.sleep(2)
 
     while True :
@@ -682,7 +682,7 @@ def nevis():
 
     os.chdir("C:\\Users\\computer\\Desktop")
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\esme_matn.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\esme_matn.mp3")
     time.sleep(2)
     command2 = goosh("1")
 
@@ -700,20 +700,20 @@ def nevis():
     os.system(f"start {command2}.txt")
 
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\matn_zakhire_shod.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\matn_zakhire_shod.mp3")
     time.sleep(4)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
     time.sleep(2)
     pas("")
 
 def photo():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\amade.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\amade.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\1.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\1.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\2.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\2.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\3.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\3.mp3")
     # شروع نمایش دوربین
     cap = cv2.VideoCapture(0)
     # خواندن یک فریم از دوربین
@@ -726,24 +726,24 @@ def photo():
     cv2.imwrite(photo_path, frame)
     os.chdir("C:\\Users\\computer\\Desktop")
     os.system("start captured_photo.jpg")
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\aks.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\aks.mp3")
     time.sleep(0.5)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\aks_gerefte_shod.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\aks_gerefte_shod.mp3")
     time.sleep(5)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
     time.sleep(2)
     pas("")
 
 def film():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\amade.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\amade.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\1.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\1.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\2.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\2.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\3.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\3.mp3")
     time.sleep(0.5)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ2.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\بیپ2.mp3")
     os.chdir("C:\\Users\\computer\\Desktop")
     def record_video_with_audio():
         # ایجاد یک شیء VideoCapture برای دوربین
@@ -819,7 +819,7 @@ def film():
         video_clip.write_videofile(output_file, codec='libx264', audio_codec='aac')
 
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\درحال_ذخیره.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\درحال_ذخیره.mp3")
     time.sleep(3)
 
     video_file = "C:\\Users\\computer\\Desktop\\captured_video.avi"
@@ -840,9 +840,9 @@ def film():
         print(f"{audio_file} deleted successfully")
     else:
         print(f"{audio_file} does not exist")
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\فیلم_ذخیره_شد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\فیلم_ذخیره_شد.mp3")
     time.sleep(4)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
     time.sleep(2)
     os.chdir("C:\\Users\\computer\\Desktop")
     os.system(f"start output_video_with_audio.mp4")
@@ -868,7 +868,7 @@ def voic_recorder():
         data = stream.read(CHUNK)
         frames.append(data)
         if keyboard.is_pressed('ctrl'):
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             break
 
@@ -893,7 +893,7 @@ def voic_recorder():
     pas("")
 
 def ayne():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بفرما_آینه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\بفرما_آینه.mp3")
     # ایجاد یک شیء VideoCapture برای دوربین
     cap = cv2.VideoCapture(0)
     # چک کردن اینکه آیا دوربین با موفقیت باز شده یا نه
@@ -917,12 +917,12 @@ def ayne():
     # تمیز کردن و انجام تمامی عملیات
     cap.release()
     cv2.destroyAllWindows()
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
     time.sleep(2)
     pas("")
 
 def ahang():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\پخش_آهنگ.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\پخش_آهنگ.mp3")
     time.sleep(1.5)
     command = goosh("1")
     alboms = {"ایرانی" : "E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\ahang_haye_sefareshi\فاز\\ایرانی",
@@ -938,7 +938,7 @@ def ahang():
     for i in mod:
         if i in command:
             aa = True
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\قطع_آهنگ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\قطع_آهنگ.mp3")
             time.sleep(2.5)
             # مسیر دایرکتوری حاوی آهنگ‌ها
             songs_dir = f"{alboms[i]}"
@@ -977,16 +977,16 @@ def ahang():
 
                     if keyboard.is_pressed('tab') or baadi == "برو بیرون" or baadi == "ولش کن" or baadi == "ولشکن":
                         pygame.mixer.music.stop()
-                        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+                        play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
                         time.sleep(2)
                         pas("")
                         break
         elif "هیچی" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             break
     if aa == False :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\نان_آلبوم.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\نان_آلبوم.mp3")
         time.sleep(3)
         ahang()
     pas("")
@@ -1078,7 +1078,7 @@ def adad_bekhan(adad):
         goda = f"{output_text}".split(" ")
         for i in goda :
             print(i)
-            play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{dict_adad[i]}.mp3")
+            play_audio(f"E . or. D:\\you model dataset sonds directory\\{dict_adad[i]}.mp3")
             if i == "میلیاردو" or i == "هزارو" or i == "میلیونو" or i == "صدو" or i == "تیلیونو" or i == "تیلیاردو" or i == "بیلیونو" or i == "بیلیاردو":
                 #
                 time.sleep(0.89)
@@ -1086,7 +1086,7 @@ def adad_bekhan(adad):
                 #
                 time.sleep(0.69)
     except Exception :
-        play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ارور عدد.mp3")
+        play_audio(f"E . or. D:\\you model dataset sonds directory\\ارور عدد.mp3")
         time.sleep(7)
         pas("")
 
@@ -1096,17 +1096,17 @@ def saat_gooya():
     saniye = int(datetime.datetime.now().time().second)
     if saat > 12 :
         saat -= 12
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ساعت.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\ساعت.mp3")
     time.sleep(0.8)
     adad_bekhan(saat)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\و.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\و.mp3")
     time.sleep(0.5)
     adad_bekhan(daghighe)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\دقیقه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\دقیقه.mp3")
     time.sleep(0.6)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.6)
     pas("")
 
@@ -1114,11 +1114,11 @@ def emrooz() :
     rooz_haye_hafte_shamsi = {"0": "2شنبه", "1": "3شنبه", "2": "4شنبه", "3": "5شنبه", "4": "جمعه",
                               "5": "شنبه", "6": "1شنبه"}
     soti = rooz_haye_hafte_shamsi[f'{datetime.datetime.today().weekday()}']
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امروز.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امروز.mp3")
     time.sleep(0.7)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{soti}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{soti}.mp3")
     time.sleep(0.8)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.4)
     pas("")
 
@@ -1131,19 +1131,19 @@ def tarikh():
     shamsi_emrooz = JalaliDateTime.now()
     print(f"{shamsi_emrooz.day} اُم_{shamsi[int(shamsi_emrooz.month)]}_{shamsi_emrooz.year}")
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امروز.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امروز.mp3")
     time.sleep(0.6)
     adad_bekhan(shamsi_emrooz.day)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امه.mp3")
     time.sleep(0.5)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{shamsi[shamsi_emrooz.month]}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{shamsi[shamsi_emrooz.month]}.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ماهه.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ماهه.mp3")
     time.sleep(0.9)
     adad_bekhan(shamsi_emrooz.year)
     time.sleep(0.4)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.6)
     pas("")
 
@@ -1163,17 +1163,17 @@ def tarikh_kamel():
                               "5": "شنبه", "6": "1شنبه"}
     shamsi_emrooz = JalaliDateTime.now()
     soti = rooz_haye_hafte_shamsi[f'{datetime.datetime.today().weekday()}']
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امروز.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امروز.mp3")
     time.sleep(0.7)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{soti}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{soti}.mp3")
     time.sleep(0.8)
     adad_bekhan(shamsi_emrooz.day)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امه.mp3")
     time.sleep(0.5)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{shamsi[shamsi_emrooz.month]}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{shamsi[shamsi_emrooz.month]}.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ماهه.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ماهه.mp3")
     time.sleep(0.9)
     adad_bekhan(shamsi_emrooz.year)
     time.sleep(0.4)
@@ -1181,17 +1181,17 @@ def tarikh_kamel():
     daghighe = int(datetime.datetime.now().time().minute)
     if saat > 12 :
         saat -= 12
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ساعت.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\ساعت.mp3")
     time.sleep(0.8)
     adad_bekhan(saat)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\و.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\و.mp3")
     time.sleep(0.5)
     adad_bekhan(daghighe)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\دقیقه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\دقیقه.mp3")
     time.sleep(0.6)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.6)
 
     pas("")
@@ -1210,21 +1210,21 @@ def tarikh_gh():
     ghamari_emrooz = Hijri.today()
     print(f"{ghamari_emrooz.day} اُم_{ghamari[int(ghamari_emrooz.month)]}_{ghamari_emrooz.year}")
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امروز.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امروز.mp3")
     time.sleep(0.6)
     adad_bekhan(ghamari_emrooz.day)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امه.mp3")
     time.sleep(0.5)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ماهه.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ماهه.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{ghamari[ghamari_emrooz.month]}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{ghamari[ghamari_emrooz.month]}.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ساله.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ساله.mp3")
     time.sleep(0.9)
     adad_bekhan(ghamari_emrooz.year)
     time.sleep(0.4)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.6)
     pas("")
 
@@ -1235,26 +1235,26 @@ def tarikh_ml():
     milada_emrooz = datetime.datetime.today()
     print(f"{milada_emrooz.day} اُم_{miladi[int(milada_emrooz.month)]}_{milada_emrooz.year}")
 
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امروز.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امروز.mp3")
     time.sleep(0.6)
     adad_bekhan(milada_emrooz.day)
     time.sleep(0.1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\امه.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\امه.mp3")
     time.sleep(0.5)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ماهه.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ماهه.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\{miladi[milada_emrooz.month]}.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\{miladi[milada_emrooz.month]}.mp3")
     time.sleep(0.9)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ساله.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\ساله.mp3")
     time.sleep(0.9)
     adad_bekhan(milada_emrooz.year)
     time.sleep(0.4)
-    play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio(f"E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(0.6)
     pas("")
 
 def App_runer():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\کدام_نرم_افزار.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\کدام_نرم_افزار.mp3")
     time.sleep(1)
     App_Dict = {
                 "ویرایش فیلم": "Adobe_After_Effe_ts_2020.lnk",
@@ -1286,63 +1286,63 @@ def App_runer():
     a = False
     for i in App_Dict.keys():
         if i in coom :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\درحال_اجرای_نرم_افزار.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\درحال_اجرای_نرم_افزار.mp3")
             time.sleep(3)
             os.system(f'start {App_Dict[i]}')
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             a = True
             pas("")
         elif "هیچی" in coom :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
             time.sleep(0.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2)
             pas("")
     if a == False :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\نرم_افزار_نیست.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\نرم_افزار_نیست.mp3")
         time.sleep(4)
         App_runer()
 
 def tas():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\تاس شما عدد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\تاس شما عدد.mp3")
     time.sleep(1.5)
     adad_bekhan(random.randrange(1, 7))
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\آورد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\آورد.mp3")
     time.sleep(0.8)
     pas("")
 
 def seke():
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\سکه_ی_شما.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\سکه_ی_شما.mp3")
     time.sleep(1.5)
     roo = random.randrange(0, 2)
     if roo == 0 :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\خط.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\خط.mp3")
         time.sleep(0.5)
     elif roo == 1:
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\شیر.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\شیر.mp3")
         time.sleep(0.5)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\آمد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\آمد.mp3")
     time.sleep(0.5)
 
     pas("")
 
 def shut_down():
     while True :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\چند_ثانیه_دیگه_سیستم_خواموش.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\چند_ثانیه_دیگه_سیستم_خواموش.mp3")
         time.sleep(2.5)
         comm = goosh("0")
         matn = number_to_speech(comm)
         if matn != False :
             while True:
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\سیستم شما تا.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\سیستم شما تا.mp3")
                 time.sleep(1)
                 adad_bekhan(matn)
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ثانیه دیگر_خواموش میشود.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\ثانیه دیگر_خواموش میشود.mp3")
                 time.sleep(2.5)
                 Q = goosh("0")
                 if "بله" in Q :
-                    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\سیستم درحال خواموشی.mp3")
+                    play_audio("E . or. D:\\you model dataset sonds directory\\سیستم درحال خواموشی.mp3")
                     time.sleep(2.5)
                     for i in range(1, int(matn) + 1) :
                         adad_bekhan(i)
@@ -1350,14 +1350,14 @@ def shut_down():
                     os.system(f"shutdown /s /t {matn}")
                     break
                 elif "خیر" in Q :
-                    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\یاشه.mp3")
+                    play_audio("E . or. D:\\you model dataset sonds directory\\یاشه.mp3")
                     time.sleep(0.9)
                     pas("")
                 else:
-                    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بله یا خیر.mp3")
+                    play_audio("E . or. D:\\you model dataset sonds directory\\بله یا خیر.mp3")
                     time.sleep(2)
         else:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\عدد نامفهوم.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\عدد نامفهوم.mp3")
             time.sleep(2)
 
 def sleep():
@@ -1387,7 +1387,7 @@ def sleep():
     #     break
 
 def mohasebe() :
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\معادله را بگویید.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\معادله را بگویید.mp3")
     time.sleep(2.5)
     command = goosh(0)
     try:
@@ -1503,14 +1503,14 @@ def mohasebe() :
         # محاسبه معادله
         mohasebe_moadele = int(eval(tabdil_yafte))
 
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\جواب معادله.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\جواب معادله.mp3")
         time.sleep(2)
 
         adad_bekhan(mohasebe_moadele)
         time.sleep(5)
         print(mohasebe_moadele)
 
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
         time.sleep(2)
         pas("")
 
@@ -1518,14 +1518,14 @@ def mohasebe() :
 
 
     except :
-        play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\مشکل در حل معادله.mp3")
+        play_audio("E . or. D:\\you model dataset sonds directory\\مشکل در حل معادله.mp3")
         time.sleep(6)
         mohasebe()
 
 def abgad() :
     abgads = ["کبیر", "صغیر", "تعدیل", "وسط", "معکوس", "وسیط", "ابجدی", "وضعی", "مغربی"]
     ezafi = ["ابجد" , "اسم" , "اسامی" , "های" , "ها" , "حساب" , "کبیر" , "صغیر" , "چنده" , "محاسبه", "حساب", "کن", "بگو", "چقدر", "این", "نام","رو","را","ابجدش", "و", "کن", "بکن", "چقدره" ,"چقدر" , "چه", "قدر", "قدره", "چقدره؟" ,"چقدر؟", "قدر؟", "قدره؟","ابجد","اسم","بذار", "حساب", "یا", "با", "به", "استفاده", "از", "توسط", "این", "اسامی", "اسم", "ها", "رو", "را", "میتونی", "لطفا", "ابجد", " و ", "و" ,"کن", "بکن", "بنما", "درست"]
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\اسامی ابجد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\اسامی ابجد.mp3")
     abgad = {}
 
 
@@ -1540,7 +1540,7 @@ def abgad() :
 
     if noe_abgad == "" :
         while True :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\چه نوع ابجد.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\چه نوع ابجد.mp3")
             time.sleep(1.5)
             comm = goosh("0")
             for i in abgads :
@@ -1549,9 +1549,9 @@ def abgad() :
                     break
 
             if "هیچی" in comm or "ولش کن" in comm :
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\باشه.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\باشه.mp3")
                 time.sleep(0.5)
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
                 time.sleep(2)
                 pas("")
 
@@ -1562,7 +1562,7 @@ def abgad() :
                 break
 
             elif noe_abgad == "" :
-                play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\چنین ابجدی در داده های ما مُجود نیست.mp3")
+                play_audio("E . or. D:\\you model dataset sonds directory\\چنین ابجدی در داده های ما مُجود نیست.mp3")
                 time.sleep(4)
 
     if noe_abgad == "کبیر":
@@ -1674,14 +1674,14 @@ def abgad() :
         gam += int(abgad.get(harf, 0))
     abgad_nahaee = int(gam)
     print(abgad_nahaee)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\جمع اسم.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\جمع اسم.mp3")
     time.sleep(5)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\عدد ابجد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\عدد ابجد.mp3")
     time.sleep(1)
     adad_bekhan(abgad_nahaee)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\میباشد.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\میباشد.mp3")
     time.sleep(1)
-    play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+    play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
     time.sleep(2)
     pas("")
 
@@ -1744,83 +1744,83 @@ def pas(sina):
 
         ################################################
         if any(word in command for word in salam_aleyk) :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari2.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari2.mp3")
             time.sleep(2)
         ################################################
         elif any(word in command for word in Translate) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             Translator()
         ################################################
         elif "سینا خدا حافظ" in command or "سینا خداحافظ" in command or any(word in command for word in khamoosh) and "سینا" in command:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\خدا_حافظ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\خدا_حافظ.mp3")
             time.sleep(4)
             exit()
         ################################################
         elif any(word in command for word in hatman_man) :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\mamnon.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\mamnon.mp3")
             time.sleep(1)
         ################################################
         elif command == "سینا":
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\salam2.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\salam2.mp3")
             time.sleep(1)
             command = goosh("1") + "سینا"
             pas(command)
         ################################################
         elif any(word in command for word in email_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
         ################################################
             time.sleep(2.5)
             send_email()
         ################################################
         elif any(word in command for word in matn_nevis_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             nevis()
         ################################################
         elif any(word in command for word in eshgh_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             nevis()
         ################################################
         elif any(word in command for word in tanafor_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             nevis()
         ################################################
         ################################################
         elif any(word in command for word in mashin_abgadi) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             abgad()
         ################################################
         ################################################
         elif any(word in command for word in map_lst) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             map()
         ################################################
         ################################################
         elif any(word in command for word in aks_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             photo()
         ################################################
         ################################################
         elif any(word in command for word in ayne_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             ayne()
         ################################################
         ################################################
         elif any(word in command for word in film_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             film()
         ################################################
         ################################################
         elif any(word in command for word in ahang_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             ahang()
         ################################################
@@ -1856,78 +1856,78 @@ def pas(sina):
         ################################################
         ################################################
         elif any(word in command for word in app_runner_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             App_runer()
         ################################################
         ################################################
         elif any(word in command for word in voice_recorder_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             voic_recorder()
         ################################################
         ################################################
         elif any(word in command for word in adad_gooya_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\ورود عدد.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\ورود عدد.mp3")
             time.sleep(1)
             adad = int(input("لطفا عدد را وارد کنید : ***-***-***-*** ::: "))
             adad_bekhan(adad)
         ################################################
         ################################################
         elif any(word in command for word in tas_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             tas()
         ################################################
         ################################################
         elif any(word in command for word in seke_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             seke()
         ################################################
         ################################################
         elif any(word in command for word in khamoosh_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             shut_down()
         ################################################
         ################################################
         elif any(word in command for word in sleep_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             sleep()
         ################################################
         ################################################
         elif any(word in command for word in check_internet_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             check_internet_connect()
         ################################################
         ################################################
         elif any(word in command for word in connect_to_internet_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             internet()
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\kari_bari.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\kari_bari.mp3")
             time.sleep(2.5)
         ################################################
         ################################################
         elif any(word in command for word in wiki_list) and "سینا" in command :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             wiki_pedia()
         ################################################
         ################################################
         elif any(word in command for word in google_list) and "سینا" in command:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             google()
         ################################################
         ################################################
         elif any(word in command for word in hesab_list) and "سینا" in command:
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\hatman.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\hatman.mp3")
             time.sleep(2.5)
             mohasebe()
         ################################################
@@ -1941,7 +1941,7 @@ def pas(sina):
             if int(kol[3]) <= 3 :
                 a = int(random.randint(1, 4))
                 print(a)
-                play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\فحش ({a}).mp3")
+                play_audio(f"E . or. D:\\you model dataset sonds directory\\فحش ({a}).mp3")
                 time.sleep(5)
                 ab = "  ***  "
                 cur.execute(f"UPDATE fahashi SET tedade_kol = '{kol[1] + 1}', fohsh = '{kol[2]} {ab * 5} {command}', tedade_movaghat = '{kol[3] + 1}'")
@@ -1949,7 +1949,7 @@ def pas(sina):
                 pas("")
 
             elif int(kol[3]) == 4 :
-                play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\فحش=خواموشی.mp3")
+                play_audio(f"E . or. D:\\you model dataset sonds directory\\فحش=خواموشی.mp3")
                 time.sleep(5)
                 ab = "  ***  "
                 cur.execute(f"UPDATE fahashi SET tedade_kol = '{kol[1] + 1}', fohsh = '{kol[2]} {ab * 5} {command}', tedade_movaghat = '{kol[3] + 1}'")
@@ -1957,18 +1957,18 @@ def pas(sina):
                 pas("")
 
             elif int(kol[3]) == 5 :
-                play_audio(f"E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\فحش و خواموش.mp3")
+                play_audio(f"E . or. D:\\you model dataset sonds directory\\فحش و خواموش.mp3")
                 time.sleep(9)
                 os.system(f"shutdown /s /t 5")
         ################################################
         ################################################
         elif "هیچی" in command :
             #
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\بیپ.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\بیپ.mp3")
         ################################################
         ################################################
         elif any(word in command for word in ghorboon_sadaghe) :
-            play_audio("E:\\موارد دیگر\\فایل های کاری\\پروژه های شخصی\\دستیار سینا\\data\\seda_ha\\خواهش_میکنم.mp3")
+            play_audio("E . or. D:\\you model dataset sonds directory\\خواهش_میکنم.mp3")
             time.sleep(5)
         ################################################
         else:
