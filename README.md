@@ -27,8 +27,8 @@ Therefore, I made a small language model in a file and a directory
 which returns ready answers or numbers for me in voice form
 And about this Desiar audio data set model for Farsi is about 1 free
 You can download the audio file of my model data set in the following link:
-https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link Model of male voices:
-https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing female voice model:
+*******************************
+********************************
 **
 
 ----------------------------------------------
@@ -97,10 +97,9 @@ This is the last shot for you
 که جواب‌های آماده و یا اعداد رو برای من به صورت صوتی برگردونه
 و حدودا این مدل دیتا ست صوتی دسیار من برای فارسی حدودا 1 گیگابایت شده
 شما می‌تونید در لینک زیر فایل صوتی دیتا ست مدل من رو دانلود کنید : 
-https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   مدل صدا های مرد : 
-https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing      مدل صدا های زنانه :
+*******************************
+***************************
 **
-
 ----------------------------------------------
 ----------------------------------------------
 ********************************
