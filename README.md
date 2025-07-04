@@ -45,11 +45,11 @@ He can use it as much as he wants or can develop it
 You can even get inspiration from this model or even get ideas for your thesis projects or even your resume
 This is the last shot for you
 [*******************************
-----------------------------------------------
-](https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   مدل صدا های مرد : )
 
 ----------------------------------------------
-[**](https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing      مدل صدا های زنانه :)
+](https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   the male voice data sets : )
+----------------------------------------------
+[**](https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing      the female voice data sets :)
 ----------------------------------------------
 ## Things he can do now:
 ##Send email #1✳ ✅✳
