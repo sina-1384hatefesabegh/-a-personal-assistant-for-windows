@@ -1,4 +1,6 @@
-## دستیار شخصی هوشمند فارسی آفلاین و آنلاین        a smart ofine or online assistance for windows
+## دستیار شخصی هوشمند فارسی آفلاین و آنلاین (سینا 2)
+## (Sina 2) a smart ofline or online assistance for windows
+
 
 <img align="center" src="https://github.com/user-attachments/assets/3f234137-74c1-4c6f-8122-4eacc28a5b33">
 
