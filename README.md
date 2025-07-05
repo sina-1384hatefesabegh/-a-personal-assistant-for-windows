@@ -48,6 +48,8 @@ You can even get inspiration from this model or even get ideas for your thesis p
 This is the last shot for you
 [*******************************
 
+### Please do not use it for commercial purposes because this model is free and available to everyone, but if it is for building a commercial app, it must be free. 
+
 ----------------------------------------------
 ](https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   the male voice data sets : )
 ----------------------------------------------
@@ -126,6 +128,7 @@ https://youtu.be/nkNV1Fm2eHA <= ویدیو تست سینا
 حتی میتونید از این مدل الهام گرفته و یا حتی ایده بگیرید برای پروژه های پایان نامه تان یا حتی رزومه
 دیگه اینم تیر آخر برای شما😃😃😉😉
 **
+### لطفا برای اهداف تجاری استفاده نشود چرا که این مدل به صورت رایگان بوده و برای همه است اما اگر برای ساخت اپ تجاری باشد باید رایگان باشد
 
 
 ##کار هایی که در حال حاضر انجام میده : 
