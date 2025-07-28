@@ -51,9 +51,7 @@ This is the last shot for you
 ### Please do not use it for commercial purposes because this model is free and available to everyone, but if it is for building a commercial app, it must be free. 
 
 ----------------------------------------------
-](https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   the male voice data sets : )
-----------------------------------------------
-[**](https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing      the female voice data sets :)
+Removed by admin due to copyright infringement and misuse.
 ----------------------------------------------
 ## Things he can do now:
 ##Send email #1✳ ✅✳
@@ -109,14 +107,13 @@ https://youtu.be/nkNV1Fm2eHA <= ویدیو تست سینا
 که جواب‌های آماده و یا اعداد رو برای من به صورت صوتی برگردونه
 و حدودا این مدل دیتا ست صوتی دسیار من برای فارسی حدودا 1 گیگابایت شده
 شما می‌تونید در لینک زیر فایل صوتی دیتا ست مدل من رو دانلود کنید : 
-[*******************************
-----------------------------------------------
-](https://drive.google.com/drive/folders/10vA3DsYFqbq6cdvQG7cbgUfgJghjxxaY?usp=drive_link   مدل صدا های مرد : )
-----------------------------------------------
-[**](https://drive.google.com/drive/folders/1Igb6qXvFFfrFjjeMj4S0S5_y7SaV2CS6?usp=sharing      مدل صدا های زنانه :)
 ----------------------------------------------
 ----------------------------------------------
-----------------------------------------------
+به علت نقض کپی رایت و سواستفاده های صورت گرفته توسط ادمین حذف شد
+
+
+
+
 ********************************
 **
 در حال حاضر مدل من یا همون دستیار من کامل نیست
